@@ -392,15 +392,19 @@ h1, h2, h3, ul, p {
 }
 
 /* ------------FOOTER------------ */
-.footer-list {
-    display: flex;
-    gap: 120px;
-}
 
 .footer {
     background-color: var(--navy-blue);
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.footer-item + .footer-item {
+    margin-left: 120px;
+}
+
+.footer-item:nth-last-child(1) {
+    margin-left: 80px;
 }
 
 .logo-foot {
@@ -467,6 +471,41 @@ h1, h2, h3, ul, p {
 
 .footer-soc-link:hover, .footer-soc-link:focus {
     background-color: var(--green);
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 16px;
+    outline: none;
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+    background: #4D5AE5;
+border-radius: 4px;
 }
 
 /* ------------PORTFOLIO------------ */
